@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/LENOVO/Work/vcpkg/installed/x64-windows/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe",
+            "compilerArgs": [
+                "-IC:/Users/LENOVO/Work/vcpkg/installed/x64-windows/include",
+                "-LC:/Users/LENOVO/Work/vcpkg/installed/x64-windows/lib",
+                "-lminisat-master-keying"
+            ]
+        }
+    ],
+    "version": 4
+}
