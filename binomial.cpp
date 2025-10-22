@@ -9,6 +9,7 @@ int main() {
     Minisat::Solver solver;
     std::vector<std::vector<Minisat::Var>> board;
     std::cin >> n;
+    auto start = std::chrono::high_resolution_clock::now();
     // initiate the board, each square represent whether a queen is present.
     for (int i = 0; i < n; i++) {
         std::vector<Minisat::Var> tmp;
@@ -87,5 +88,9 @@ int main() {
     } else {
         std::cout<<"unsatisfiable";
     }
+
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+    std::cout << "n=" << n << " Time: " << duration.count() << " ms\n";
     return 0;
 }
